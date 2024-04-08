@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Prensa</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer type="module" src="main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+          
+      <div class="container header__container">
+        <div class="header__top">
+          <div class="header__left header-left">
+            <div class="header-left__top">
+              <ul class="header-left__navigation">
+                <li class="header-left__item">
+                  <a href="#" class="header-left__link">
+                    <svg
+                      width="20"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z"
+                        fill="#AAA"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+                        fill="#AAA"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 18C2 17.4477 2.44772 17 3 17H21C21.5523 17 22 17.4477 22 18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18Z"
+                        fill="#AAA"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-left__item">
+                  <a href="#" class="header-left__link">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18C14.866 18 18 14.866 18 11C18 7.13401 14.866 4 11 4ZM2 11C2 6.02944 6.02944 2 11 2C15.9706 2 20 6.02944 20 11C20 15.9706 15.9706 20 11 20C6.02944 20 2 15.9706 2 11Z"
+                        fill="#AAA"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.9428 15.9428C16.3333 15.5523 16.9665 15.5523 17.357 15.9428L21.707 20.2928C22.0975 20.6833 22.0975 21.3165 21.707 21.707C21.3165 22.0975 20.6833 22.0975 20.2928 21.707L15.9428 17.357C15.5523 16.9665 15.5523 16.3333 15.9428 15.9428Z"
+                        fill="#AAA"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <ul class="header-left__links">
+                <li class="header-left__item">
+                  <a href="#" class="header-left__link">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.25 1.5H3.75C2.50781 1.5 1.5 2.50781 1.5 3.75V20.25C1.5 21.4922 2.50781 22.5 3.75 22.5H20.25C21.4922 22.5 22.5 21.4922 22.5 20.25V3.75C22.5 2.50781 21.4922 1.5 20.25 1.5ZM17.9578 8.94375C17.9672 9.075 17.9672 9.21094 17.9672 9.34219C17.9672 13.4062 14.8734 18.0891 9.22031 18.0891C7.47656 18.0891 5.85938 17.5828 4.5 16.7109C4.74844 16.7391 4.9875 16.7484 5.24063 16.7484C6.67969 16.7484 8.00156 16.2609 9.05625 15.4359C7.70625 15.4078 6.57188 14.5219 6.18281 13.3031C6.65625 13.3734 7.08281 13.3734 7.57031 13.2469C6.16406 12.9609 5.10938 11.7234 5.10938 10.2281V10.1906C5.51719 10.4203 5.99531 10.5609 6.49687 10.5797C6.0752 10.2992 5.72952 9.91869 5.49069 9.4721C5.25186 9.02552 5.1273 8.52675 5.12813 8.02031C5.12812 7.44844 5.27813 6.92344 5.54531 6.46875C7.05938 8.33437 9.33281 9.55313 11.8828 9.68438C11.4469 7.59844 13.0078 5.90625 14.8828 5.90625C15.7688 5.90625 16.5656 6.27656 17.1281 6.87656C17.8219 6.74531 18.4875 6.4875 19.0781 6.13594C18.8484 6.84844 18.3656 7.44844 17.7281 7.82812C18.3469 7.7625 18.9469 7.58906 19.5 7.35C19.0828 7.96406 18.5578 8.50781 17.9578 8.94375Z"
+                        fill="#AAA"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-left__item">
+                  <a href="#" class="header-left__link">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.25 1.5H3.75C3.15326 1.5 2.58097 1.73705 2.15901 2.15901C1.73705 2.58097 1.5 3.15326 1.5 3.75L1.5 20.25C1.5 20.8467 1.73705 21.419 2.15901 21.841C2.58097 22.2629 3.15326 22.5 3.75 22.5H10.1836V15.3605H7.23047V12H10.1836V9.43875C10.1836 6.52547 11.918 4.91625 14.5744 4.91625C15.8466 4.91625 17.1769 5.14313 17.1769 5.14313V8.0025H15.7111C14.2669 8.0025 13.8164 8.89875 13.8164 9.81797V12H17.0405L16.5248 15.3605H13.8164V22.5H20.25C20.8467 22.5 21.419 22.2629 21.841 21.841C22.2629 21.419 22.5 20.8467 22.5 20.25V3.75C22.5 3.15326 22.2629 2.58097 21.841 2.15901C21.419 1.73705 20.8467 1.5 20.25 1.5Z"
+                        fill="#AAA"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-left__item">
+                  <a href="#" class="header-left__link">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.0048 6.60928C9.02354 6.60928 6.61885 9.01396 6.61885 11.9952C6.61885 14.9765 9.02354 17.3812 12.0048 17.3812C14.986 17.3812 17.3907 14.9765 17.3907 11.9952C17.3907 9.01396 14.986 6.60928 12.0048 6.60928ZM12.0048 15.4968C10.0782 15.4968 8.50322 13.9265 8.50322 11.9952C8.50322 10.064 10.0735 8.49365 12.0048 8.49365C13.936 8.49365 15.5063 10.064 15.5063 11.9952C15.5063 13.9265 13.9313 15.4968 12.0048 15.4968ZM18.8673 6.38896C18.8673 7.0874 18.3048 7.64522 17.611 7.64522C16.9126 7.64522 16.3548 7.08271 16.3548 6.38896C16.3548 5.69521 16.9173 5.13271 17.611 5.13271C18.3048 5.13271 18.8673 5.69521 18.8673 6.38896ZM22.4345 7.66397C22.3548 5.98115 21.9704 4.49053 20.7376 3.2624C19.5095 2.03428 18.0188 1.6499 16.336 1.56553C14.6017 1.46709 9.40322 1.46709 7.66885 1.56553C5.99072 1.64521 4.5001 2.02959 3.26729 3.25771C2.03447 4.48584 1.65479 5.97646 1.57041 7.65928C1.47197 9.39365 1.47197 14.5921 1.57041 16.3265C1.6501 18.0093 2.03447 19.4999 3.26729 20.728C4.5001 21.9562 5.98604 22.3405 7.66885 22.4249C9.40322 22.5233 14.6017 22.5233 16.336 22.4249C18.0188 22.3452 19.5095 21.9608 20.7376 20.728C21.9657 19.4999 22.3501 18.0093 22.4345 16.3265C22.5329 14.5921 22.5329 9.39834 22.4345 7.66397ZM20.1938 18.1874C19.8282 19.1062 19.1204 19.814 18.197 20.1843C16.8142 20.7327 13.5329 20.6062 12.0048 20.6062C10.4767 20.6062 7.19072 20.728 5.8126 20.1843C4.89385 19.8187 4.18604 19.1108 3.81572 18.1874C3.26729 16.8046 3.39385 13.5233 3.39385 11.9952C3.39385 10.4671 3.27197 7.18115 3.81572 5.80303C4.18135 4.88428 4.88916 4.17646 5.8126 3.80615C7.19541 3.25771 10.4767 3.38428 12.0048 3.38428C13.5329 3.38428 16.8188 3.2624 18.197 3.80615C19.1157 4.17178 19.8235 4.87959 20.1938 5.80303C20.7423 7.18584 20.6157 10.4671 20.6157 11.9952C20.6157 13.5233 20.7423 16.8093 20.1938 18.1874Z"
+                        fill="#AAA"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="header-left__descr">Panamá, 13 de marzo del 2024</p>
+          </div>
+          <div class="header__center">
+            <img
+              src="https://multimedia.corprensa.com/la-prensa/assets/logo_laprensa_panama.svg"
+              alt="logo"
+            />
+          </div>
+          <div class="header__right">
+            <div class="header__buttons">
+              <a class="header__inicia" href="#">Inicia Sesión</a>
+              <a class="header__suscribete" href="#">Suscríbete desde $5</a>
+            </div>
+            <div class="header__links">
+              <a href="#">ePaper</a> <b>|</b>
+              <a class="kiosco" href="#">Kiosco</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__nav header-nav">
+            <ul class="header-nav__items">
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Locales</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Judiciales</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Politica</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Economia</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Mundo</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Deportes</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Vivir+</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Status K</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Unidad Investigativa</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Opinion</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Multimedia</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Fe de Erratas</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container main__container">
+        <div class="main__wrapper">
+          <div class="main__news main-news">
+            <div class="news-links">
+              <a href="#" class="news-links__link"> Новости </a>
+              <div>|</div>
+              <a href="#" class="news-links__link"> Образование </a>
+            </div>
+            <article class="main__article">
+              <h2 class="main__title">
+                La fuga del cartel a un convento por un producto inventado y el
+                rejuvenecimiento milagroso de todas sus hermanas
+              </h2>
+              <div class="main__name main-name">
+                <div class="main-name__text">Передача: Noticias Repretel</div>
+                <div class="main-name__text">
+                  Ведущий:
+                  <a href="#" class="main-name__link">Blanca Herrera</a>
+                </div>
+                <div class="main-name__text">
+                  Название продукта:
+                  <a href="#" class="main-name__link">Gialuron</a>
+                </div>
+                <div class="main-name__text">
+                  Героиня - Mónica Astorga Carmona (Hermana Mónica)
+                </div>
+                <div class="main-name__text">Страна - Panamá</div>
+]              <div class="main__info main-info">
+                <h3 class="main-info__title">
+                  La historia desgarradora de la Hermana Mónica (Dra. Mónica
+                  Astorga Carmona del Instituto Nacional de Laboratorios deLa historia desgarradora de la Hermana Mónica (Dra. Mónica
+                  Astorga Carmona del Instituto Nacional de Laboratorios de
+                  Salud, antes de convertirse en monja)La historia desgarradora de la Hermana Mónica (Dra. Mónica
+                  Astorga Carmona del Instituto Nacional de Laboratorios de
+                  Salud, antes de convertirse en monja)La historia desgarradora de la Hermana Mónica (Dra. Mónica
+                  Astorga Carmona del Instituto Nacional de Laboratorios de
+                  Salud, antes de convertirse en monja)
+                  Salud, antes de convertirse en monja)La La historia desgarradora de la Hermana Mónica (Dra. Mónica
+                  Astorga Carmona del Instituto Nacional de Laboratorios de
+                  Salud, antes de convertirse en monja)La historia desgarradora de la Hermana Mónica (Dra. Mónica
+                  Astorga Carmona del Instituto Nacional de Laboratorios de
+                  Salud, antes de convertirse en monja)La historia desgarradora de la Hermana Mónica (Dra. Mónica
+                  Astorga Carmona del Instituto Nacional de Laboratorios de
+                  Salud, antes de convertirse en monja)historia desgarradora de la Hermana Mónica (Dra. Mónica
+                  Astorga Carmona del Instituto Nacional de Laboratorios de
+                  Salud, antes de convertirse en monja)La historia desgarradora de la Hermana Mónica (Dra. Mónica
+                  Astorga Carmona del Instituto Nacional de Laboratorios de
+                  Salud, antes de convertirse en monja)
+                </h3>
+                <div class="main-info__video">
+                  <video
+                    width="100%" height="100%" type='video/ogg; codecs="theora, vorbis"'
+                    controls="controls"
+                    
+                    
+                  >
+                    <source src="efir.webm" />
+                  </video>
+                </div>
+                <div class="main-info__text">
+                  <p class="main-info__descr border">
+                    Qué producto inventó Mónica, por qué se escondió de la
+                    mafia, qué tenía que ver con el negocio farmacéutico, cómo
+                    acabó en un convento del sur del país y el milagro de
+                    rejuvenecimiento que ocurrió con las monjas, lo descubrirás
+                    en este artículo.
+                  </p>
+                  <p class="main-info__descr">
+                    Blanca Herrera: ¿Qué pasó después? Hermana Mónica: Una
+                    semana después, cuando volvía a casa del trabajo, creí que
+                    me perseguía un minibús negro de la marca Mercedes.
+                  </p>
+                  <p class="main-info__descr">
+                    Cuando llegué a casa, encontré la puerta abierta. Me asusté
+                    y quise huir, pero dos hombres se acercaron por detrás y me
+                    exigieron que entrara al apartamento. Otros dos hombres ya
+                    estaban allí. Me agarraron y... todavía me resulta difícil
+                    hablar de ello, lo siento... (llorando) ...me golpearon y
+                    violaron.
+                  </p>
+                  <p class="main-info__descr">
+                    Blanca Herrera: ¡Qué horror! ¿Has averiguado quién era?
+                    Hermana Mónica: Sí, uno de los atacantes me gritó diciendo:
+                    "¡¿Quieres acabar en una zanja con la boca cosida y una nota
+                    en el bolsillo? ¡Nadie se atreve a ir contra el Cártel del
+                    Golfo!”
+                  </p>
+                </div>
+                <div class="main-info__image">
+                  <img src="jertv.webp" alt="news-photo" />
+                </div>
+              </div>
+              <form  class="main__form">
+                <button class="main__button">
+                  <img src="" alt="button-main">
+                </button>
+              </form>
+            </article>
+          </div>
+          <div class="main__asides">
+            <aside class="main__aside main-aside">
+              <h3 class="main-aside__title">
+                <span>ÚLTIMA HORA</span>
+              </h3>
+              <ul class="main-aside__items">
+                <li class="main-aside__item">
+                  <span>13:45</span> Los desacuerdos dificultan la elección de
+                  los miembros del consejo de transición en Haití [<a href="#"
+                    >Leer más</a
+                  >] []
+                </li>
+                <li class="main-aside__item">
+                  <span>08:30</span> Desempleo juvenil: ¿Promesas electorales o
+                  ideas prestadas? [<a href="#">Leer más</a>] []
+                </li>
+                <li class="main-aside__item">
+                  <span>08:15</span> Preparación competitiva, entre errores
+                  matemáticos y promesas de capacitación técnica [<a href="#"
+                    >Leer más</a
+                  >] []
+                </li>
+                <li class="main-aside__item">
+                  <span>08:15</span> Preparación competitiva, entre errores
+                  matemáticos y promesas de capacitación técnica [<a href="#"
+                    >Leer más</a
+                  >] []
+                </li>
+                <li class="main-aside__item">
+                  <span>08:15</span> Preparación competitiva, entre errores
+                  matemáticos y promesas de capacitación técnica [<a href="#"
+                    >Leer más</a
+                  >] []
+                </li>
+                <li class="main-aside__item">
+                  <span>08:15</span> Preparación competitiva, entre errores
+                  matemáticos y promesas de capacitación técnica [<a href="#"
+                    >Leer más</a
+                  >] []
+                </li>
+                <li class="main-aside__item">
+                  <span>08:15</span> Preparación competitiva, entre errores
+                  matemáticos y promesas de capacitación técnica [<a href="#"
+                    >Leer más</a
+                  >] []
+                </li>
+                <li class="main-aside__item">
+                  <span>08:15</span> Preparación competitiva, entre errores
+                  matemáticos y promesas de capacitación técnica [<a href="#"
+                    >Leer más</a
+                  >] []
+                </li>
+              </ul>
+            </aside>
+            <aside class="main__aside main-aside">
+              <h3 class="main-aside__title">
+                <span>LAS MÁS LEÍDAS</span>
+              </h3>
+              <ul class="main-aside__items"></ul>
+            </aside>
+            <aside class="main__aside main-aside aside-recomed">
+              <h3 class="main-aside__title">
+                <span>RECOMENDADOS PARA TI</span>
+              </h3>
+              <ul class="aside-recomend__items">
+                <li class="aside-recomed__item">
+                  <img
+                    src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/lnvLPMhfNFvr3fWk75dfStVaUK0=/fit-in/200x200/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/HL25XVDZMZHGFDGFGBENXZPQCE.JPG"
+                    alt="photo"
+                  />
+                  <a
+                    >Cerro Patacón: Cinco incendios en un mes y la amenaza
+                    persistente del humo contaminante</a
+                  >
+                </li>
+                <li class="aside-recomed__item">
+                  <img
+                    src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/YmW4u86jjxLiuv4szpBpX9-CFd4=/fit-in/200x200/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/J24LDX26IZEBNBPY2H7GZ54CH4.jpg"
+                    alt="photo"
+                  />
+                  <a
+                    >Puntos clave del problema sobre las plazas de internado
+                    médico en Panamá</a
+                  >
+                </li>
+                <li class="aside-recomed__item">
+                  <img
+                    src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/a-zWQvuFub8d2EP26TZesdSyiCc=/fit-in/200x200/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/A7R3PH5KCRHL3HHHECTW2GTTH4.jpg"
+                    alt="photo"
+                  />
+                  <a
+                    >Panamá implementa sistema digital para gestión de registros
+                    sanitarios de alimentos</a
+                  >
+                </li>
+                <li class="aside-recomed__item">
+                  <img
+                    src="https://corprensa-la-prensa-prod.cdn.arcpublishing.com/resizer/408XwSz2cotqVe0mDvJUJc5ahWA=/fit-in/200x200/smart/cloudfront-us-east-1.images.arcpublishing.com/corprensa/OOAIBG7HTRDTPLLP5OKXDQWZGY.jpg"
+                    alt="photo"
+                  />
+                  <a
+                    >CSS brinda 15 mil 774 atenciones en el operativo Apolo 2024
+                    durante el Carnaval</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

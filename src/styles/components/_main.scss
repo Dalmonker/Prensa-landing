@@ -1,0 +1,138 @@
+.main {
+  &__wrapper {
+    display: flex;
+  }
+  &__news {
+    width: 100%;
+    border-right: 1px solid #ddd;
+    padding-right: 1.5%;
+    padding-top: 10px;
+  }
+  &__news .news-links {
+    display: flex;
+    &__link {
+      text-transform: uppercase;
+      color: #777;
+      font-weight: bold;
+      margin-right: 3px;
+      margin-left: 3px;
+    }
+  }
+  &__title {
+    font-family: "Merriweather";
+    font-size: 2.6rem;
+    line-height: 1.2em;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ddd;
+  }
+
+  &__name {
+    color: #777;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ddd;
+  }
+  &__info {
+    margin-top: 10px;
+  }
+  &-info__title {
+    font-family: "Merriweather";
+    line-height: 1.2em;
+    margin-bottom: 10px;
+  }
+  &-info__descr {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  &__asides {
+    padding-left: 1.5%;
+    width: 33%;
+    padding-top: 60px;
+  }
+
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 55px;
+    .aside-recomend__items {
+      background: #ebf7ff;
+      font-size: 1em;
+      line-height: 1.5em;
+      padding: 14px;
+      height: 469px;
+      overflow-y: scroll;
+    }
+    .aside-recomed__item {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .aside-recomed__item a {
+      color: #000;
+      font-size: 16px;
+    }
+    .aside-recomed__item img {
+      width: 71px;
+      height: 67px;
+      margin-right: 10px;
+    }
+  }
+
+  &-aside__items {
+    padding: 14px;
+    background: #f2f2f2;
+    height: 600px;
+    overflow-y: scroll;
+    font-size: 1em;
+    width: 100%;
+  }
+
+  &-aside__item {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #ddd;
+    line-height: 1.5em;
+  }
+
+  &-aside__item span {
+    color: #e12248;
+  }
+
+  &-aside__title {
+    border-bottom: 1px solid #e12248;
+    width: 100%;
+    text-align: center;
+  }
+
+  &-aside__title span {
+    padding: 4px 0px 0px;
+    border-bottom: 4px solid #e12248;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    &__asides {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .main {
+    &__title {
+      font-size: 1.9rem;
+    }
+  }
+}
